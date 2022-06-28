@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5E8CB9286B953400C7D1BA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8CB8286B953400C7D1BA /* AppError.swift */; };
+		2D5E8CBD286B95DA00C7D1BA /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8CBC286B95DA00C7D1BA /* PersonProtocol.swift */; };
+		2D5E8CBF286B965800C7D1BA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E8CBE286B965800C7D1BA /* Employee.swift */; };
 		2DA4155A286B94BD00ED8948 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA41559286B94BD00ED8948 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D5E8CB8286B953400C7D1BA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		2D5E8CBC286B95DA00C7D1BA /* PersonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProtocol.swift; sourceTree = "<group>"; };
+		2D5E8CBE286B965800C7D1BA /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		2DA41556286B94BD00ED8948 /* learn-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "learn-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA41559286B94BD00ED8948 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,9 +44,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5E8CB7286B951C00C7D1BA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8CB8286B953400C7D1BA /* AppError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		2D5E8CBA286B959500C7D1BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8CBE286B965800C7D1BA /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D5E8CBB286B95BB00C7D1BA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E8CBC286B95DA00C7D1BA /* PersonProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		2DA4154D286B94BD00ED8948 = {
 			isa = PBXGroup;
 			children = (
+				2D5E8CBB286B95BB00C7D1BA /* Protocols */,
+				2D5E8CBA286B959500C7D1BA /* Models */,
+				2D5E8CB7286B951C00C7D1BA /* Errors */,
 				2DA41558286B94BD00ED8948 /* learn-swift */,
 				2DA41557286B94BD00ED8948 /* Products */,
 			);
@@ -120,6 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5E8CBD286B95DA00C7D1BA /* PersonProtocol.swift in Sources */,
+				2D5E8CBF286B965800C7D1BA /* Employee.swift in Sources */,
+				2D5E8CB9286B953400C7D1BA /* AppError.swift in Sources */,
 				2DA4155A286B94BD00ED8948 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

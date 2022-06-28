@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+let john = Employee(name: "John", surname: "Doe")
 
+do {
+    try john.swim()
+} catch AppErrors.FirstError {
+    print("Oops... John cannot swim")
+}
